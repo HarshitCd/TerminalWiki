@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "terminal-wiki"
+version = "0.1.0"
+description = "Allows you to view wikipedia in markdown within terminal"
+authors = ["Harshit Cd <harshitcd@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+bs4 = "^0.0.1"
+requests = "^2.31.0"
+markdownify = "^0.11.6"
+
+[tool.poetry.scripts]
+my-script = "terminal_wiki:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
