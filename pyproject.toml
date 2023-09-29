@@ -6,13 +6,16 @@ authors = ["Harshit Cd <harshitcd@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.13"
 bs4 = "^0.0.1"
 requests = "^2.31.0"
 markdownify = "^0.11.6"
 
 [tool.poetry.scripts]
-my-script = "terminal_wiki:main"
+terminal-wiki = "terminal_wiki:main"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
